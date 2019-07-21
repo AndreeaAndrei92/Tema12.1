@@ -26,5 +26,16 @@ namespace WebApplication1.Controllers
             return View(studentList);
         }
 
+        [HttpPost]
+        public ActionResult Edit(Student std)
+        {
+            var id = std.StudentId;
+            var name = std.StudentName;
+            var age = std.Age;
+            var standardName = std.standard.StandardName;
+
+            return RedirectToAction("Index");
+        }
+
     }
 }
