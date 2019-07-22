@@ -13,5 +13,11 @@ namespace WebApplication1.Models
         public string StudentName { get; set; }
         public int Age { get; set; }
         public Standard standard { get; set; }
+
+        public enum Gender
+        {
+            Male,
+            Female
+        }
     }
 }
